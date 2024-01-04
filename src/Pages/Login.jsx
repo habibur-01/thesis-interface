@@ -1,5 +1,5 @@
 import React, { useContext } from 'react';
-import { useLocation, useNavigate } from 'react-router-dom';
+import { Link, useLocation, useNavigate } from 'react-router-dom';
 import Swal from 'sweetalert2';
 import { AuthContext } from '../Provider/AuthProvider';
 
@@ -18,7 +18,7 @@ const Login = () => {
         .then(result => {
             console.log(result.user)
             
-            navigate(location?.state ? location.state : "/")
+            navigate("/")
             Swal.fire({
                 position: "center",
                 icon: "success",
@@ -56,7 +56,7 @@ const Login = () => {
                         <button className="btn btn-primary">Login</button>
                     </div>
                     <label className="label">
-                        <a href="#" className="label-text-alt link link-hover">Already have an account? Please <span className='text-indigo-700'>Login</span></a>
+                        <Link to={"/register"} className="label-text-alt link link-hover">Already have an account? Please <span className='text-indigo-700'>Register</span></Link>
                     </label>
                 </form>
 

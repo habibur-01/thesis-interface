@@ -6,7 +6,7 @@ import Register from "../Pages/Register";
 import Login from "../Pages/Login";
 import ErrorPage from "../Pages/ErrorPage/ErrorPage";
 import Details from "../Pages/Details/Details";
-import PrivateRoute from "../PrivateRoute/PrivateRoute";
+// import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
 const router = createBrowserRouter([
     {
@@ -34,7 +34,7 @@ const router = createBrowserRouter([
         {
           path: "/details/:id",
           element: <Details></Details>,
-          loader: ({ params }) => fetch(`http://localhost:3000/task/${params.id}`)
+          loader: ({ params }) => fetch(`http://localhost:3000/data/${params.id}`)
         }
       ]
     },

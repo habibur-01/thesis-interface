@@ -38,7 +38,7 @@ const DaisyNav = () => {
                             <NavLink to={'/login'}><li>Login</li></NavLink>
                         </ul>
                     </div>
-                    <a className="btn btn-ghost text-xl">daisyUI</a>
+                    <a className="btn btn-ghost text-xl">Smart Acquaculture</a>
                 </div>
                 <div className="navbar-center hidden  lg:flex">
                     <ul className="menu menu-horizontal gap-6 px-1">
