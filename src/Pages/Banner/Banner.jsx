@@ -1,5 +1,5 @@
 import React from 'react';
-import bannerImg from "../../assets/banner.jpg"
+import bannerImg from "../../assets/shrimp.jpg"
 
 const Banner = () => {
 
@@ -8,6 +8,7 @@ const Banner = () => {
         backgroundSize: 'cover',
         // backgroundPosition: 'center',
         height: '600px',
+        
     };
     return (
         <div>
