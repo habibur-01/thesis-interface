@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const Dashboard = () => {
     const [allTask, setAllTask] = useState([])
-    const url = 'http://localhost:3000/data'
+    const url = 'https://thesis-final.vercel.app/data'
     useEffect(() => {
         fetch(url)
             .then(res => res.json())
